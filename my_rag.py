@@ -32,7 +32,7 @@ embeddings = PrefixedEmbeddings(base_embeddings)
 from langchain_community.vectorstores import Chroma
 
 if not Path(PERSIST_DIRECTORY).exists():
-    print("📦 База не найдена. Начинаем индексацию сайта...")
+    print("База не найдена. Начинаем индексацию сайта...")
     from langchain_community.document_loaders import SitemapLoader, RecursiveUrlLoader
     from langchain_text_splitters import RecursiveCharacterTextSplitter
 
